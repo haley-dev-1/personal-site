@@ -39,3 +39,7 @@ footer {
   padding: 1rem;
   background: #ddd;
 }
+
+.top-nav-button:hover {
+    color: rgb(156, 156, 156);
+}
