@@ -43,3 +43,14 @@ footer {
 .top-nav-button:hover {
     color: rgb(156, 156, 156);
 }
+
+/* 
+Images for Project card
+*/
+
+.project-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0.5em;
+}
