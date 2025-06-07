@@ -19,3 +19,12 @@ personal-page/
 
 Email: hlind.engineering@gmail.com
 Linkedin: linkedin.com/in/haley-lind/
+
+## TODO 
+
+- add roadmap/current works/aspirations
+- personality aspect 
+- skills section per project
+
+future project ideas:
+- portable pcb/thermocouple soldering thing!
