@@ -1,0 +1,87 @@
+/* 
+*  Styling for the constellation/roadmap idea. 
+*  
+*/
+
+body {
+    background-color: #0b0c10;
+      color: white;
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      overflow: hidden;
+}
+
+.constellation {
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.complete .star {
+    background-color: #00ffcc;
+}
+.in-progress .star {
+    background-color: #ffcc00;
+}
+
+.constellation:hover {
+    transform: scale(1.15);
+    z-index: 10;
+}
+.star {
+    background-color: white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+.label {
+    position: absolute;
+    top: 16px;
+    left: -30px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+}
+
+
+   /* <ul>
+    <li>Bare metal development</li>
+    <li>Microcontroller</li>
+    <li>Design PCB - KiCad</li>
+        <ul>
+            <li>Designing custom modules</li>
+            <li>SDL, SCL (I2C protocol)</li>
+            <li>CAN</li>
+        </ul>
+    <li>JTAG, UART</li>
+    <li>Soldering  √</li>
+    <li>Communication protocols
+        <ul>
+            <li>WiFi</li>
+            <li>Bluetooth</li>
+            <li>CAN</li>
+        </ul>
+    </li>
+    <li>Figuring out alt code for checkmark, not square root  &#10003;</li>
+    <li>Tooling and Debugging</li>
+    <li>RTOS (FreeRTOS)
+        <ul>
+            <li>Scheduling</li>
+            <li>Preemption</li>
+            <li>Tasks</li>
+            <li>Queues</li>
+            <li>Semaphores</li>
+        </ul>
+    </li>
+    <li>Peripherals datasheets configurations</li>
+    <li>Real-time scheduling
+        <ul>
+            <li>Rate-Monotonic Analysis (RMA)</li>
+            <li>Earliest Deadline First (EDF)</li>
+        </ul>
+    </li>
+    <li>Sensor integration</li>
+    </ul> */
