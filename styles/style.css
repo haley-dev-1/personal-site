@@ -1,0 +1,167 @@
+
+/* Light Mode! */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Dark Mode! */
+/* body {
+      background-color: #0b0c10;
+      /* color: white; */
+      /* font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; */
+      /* margin: 0; */
+      /* overflow: hidden; } */
+
+
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ddd;
+}
+
+/* .top-nav-button {
+  /**/
+/* } */ 
+
+/* 
+.top-nav-button:hover {
+    color: rgb(156, 156, 156);
+} */
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #222;
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sticky-nav a {
+  /* margin: 0 1rem; */
+  color: #fff;
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: color 0.3s ease;
+}
+
+.sticky-nav a:hover {
+  color: rgb(156, 156, 156);
+}
+
+
+/* 
+Images for Project card
+*/
+
+.project-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0.5em;
+}
+
+/* Image modal section */
+
+.media-thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.thumb {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.thumb:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.modal-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-nav button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* End of Image Modal section */
