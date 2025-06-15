@@ -1,5 +1,6 @@
 # personal-site
 My personal website - outlining my experience, current works, and future plans. 
+View at https://haley-dev-1.github.io/personal-site/
 
 ## File Structure
 personal-page/
