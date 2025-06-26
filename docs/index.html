@@ -21,11 +21,12 @@
     <nav class="sticky-nav">
         <a href="#projects" class="top-nav-button">Projects</a>
         <a href="#about" class="top-nav-button">About Me</a>
-        <a href="#future" class="top-nav-button">My Future</a>
+        <!-- <a href="#future" class="top-nav-button">My Future</a> -->
+        <!-- <a href="#patents" class="top-nav-button">Patents</a> -->
         <a href="#contact" class="top-nav-button">Contact</a>
     </nav>
 
-    <section id="projects">
+    <section id="introduction">
         <h2>Introduction</h2>
         <p> Welcome to my personal portfolio - a space where I share not only what I've accomplished, but who I am as a person and  as an upcoming engineer. </p>
         <p> I'm an individual who learns fast, thinks analytically, and cares a lot - about my impact, my team, developing ideas, and about doing great work. I built this site so you can view (more in depth than a resume) the work I've done, what I currently enjoy doing, and my progressions. </p>
@@ -33,17 +34,35 @@
         <p> Thank you for taking the time to view my work!</p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <h2 id="projects-header">Projects</h2>
 
+    <section id="projects">
+        
+        <div class="project-card">
+            <h3>ESP32 Camera</h3>
+            <p>Passion Project • Embedded Systems • June - Present</p>
+            
+            <p>THIS IS <b>IN PROGRESS!</b> Currently undergoing an internship, 2 Summer courses, balancing social life and physical activity! This shall unravel slowly...</p>
+            
+            <p>Currently, I'm doing research on making this project work. <br>
+            I have forked the repo for the camera drivers. <br> 
+            The ESP32-S3 Microcontroller + Camera module is arriving soon. The LCD screen already arrived.</p>
+
+            <p>This project idea sparked because of my love for taking photos.</p>
+            
+            <p><b>Tools:</b> ESP32, Arduino IDE, C</p>
+            
+            <!-- <p><b>Media: </b></p> -->
+            
+        </div>
+        
         <div class="project-card">
             <h3>PCB Design for Wearable Health Monitor</h3>
             <p>Passion Project • Embedded Systems • Summer 2025</p>
             <p>Designed the PCB for a wearable health monitor as a hands-on project to explore PCB design, I2C communication, embedded systems, and CAD. Using KiCad, I created
                 custom PCB layouts based on existing commercial modules and integrated components like the MAX30102 pulse oximeter and SSD1306 OLED display. This project 
                 involved debugging communication issues, refining circuit design, and learning how to work with sensor data in real-time using an Arduino microcontroller.</p>
-            <p>Tools: KiCad, Arduino, MAX30102, SSD1306, I2C protocol, Embedded C</p>
-            <p><b>TODO:</b> Take away the Arduino board, replace with only the bare microcontroller. </p>
+            <p>Tools: KiCad, Arduino, I2C protocol, Embedded C</p>
             
             <p><b>Media: </b></p>
             <img src="assets/journal/june_2025/pcb_design_2.png" class="thumb" onclick="openGallery('pcb')">
@@ -64,25 +83,25 @@
             <h3>Multimodal Data Fusion for Emotion Recognition</h3>
             <p>CSCE790 • Neuromorphic & Edge Computing • Spring 2025</p>
             <p>Group final project. I developed the multimodal data fusion model, which took the outputs of a Facial Emotion Recognition (FER) CNN model and a Sentiment Analysis 
-                (SA) model. Through concatenation, a simple but effective data fusion technique, our group achieved higher accuracy than either unimodal approach.  </p> 
-            <p><strong>Media:</strong></p>
-            <ul>
-                <li><a href="assets/journal/spring_2025/CSCE790_Paper.pdf" target="_blank">Final Paper (PDF)</a></li>
-                <li><a href="assets/journal/spring_2025/CSCE790_Presentation.pdf" target="_blank">Presentation Slides (PDF)</a></li>
-                <li><a href="https://github.com/haley-dev-1/sentiment-analysis-CSCE790" target="_blank">GitHub Repository</a></li>
-            </ul>
+                (SA) model. Through concatenation, a simple but effective data fusion technique, our group achieved higher accuracy than either unimodal approach.</p> 
 
-            <img src="assets/journal/spring_2025/setup.jpg" class="thumb" onclick="openGallery('csce790')">
-
-            <!-- <div class="media-thumbs">
-                <img src="assets/journal/spring_2025/selfie.jpg" class="thumb" onclick="openModal(this.src)" />
-                <img src="assets/journal/spring_2025/setup.jpg" class="thumb" onclick="openModal(this.src)" />
-            </div> -->
-
-            <b> </br>Our group won an opportunity for a free submission to the ICML conference - this was awarded by our professor, Dr. Ramtin Zand.</b>
-             
             
-            
+            <div class="media-section" style="display: flex; flex-wrap: wrap; gap: 1rem;  padding-top: 10px;"> <!-- split into two -->
+                <!-- Links Column -->
+                <div style="flex: 1; min-width: 200px;">
+                    <p><strong>Media:</strong></p>
+                    <ul>
+                        <li><a href="assets/journal/spring_2025/CSCE790_Paper.pdf" target="_blank">Final Paper (PDF)</a></li>
+                        <li><a href="assets/journal/spring_2025/CSCE790_Presentation.pdf" target="_blank">Presentation Slides (PDF)</a></li>
+                        <li><a href="https://github.com/haley-dev-1/sentiment-analysis-CSCE790" target="_blank">GitHub Repository</a></li>
+                    </ul>
+                    <b><br>Our group won an opportunity for a free submission to the ICML conference - this was awarded by our professor, Dr. Ramtin Zand.</b>
+                </div>
+                <!-- Images Column -->
+                <div style="flex: 1; min-width: 200px;">
+                    <img src="assets/journal/spring_2025/setup.jpg" class="thumb" onclick="openGallery('csce790')">
+                </div>
+            </div>
         </div>
 
         <!-- <div class="project-card">
@@ -90,6 +109,8 @@
             <p>CSCE311 • Operating Systems • Fall 2024</p>
             <p>Description</p>
         </div> -->
+
+       
         
          <div class="project-card">
             <h3>Multithreaded two-way group chat</h3>
@@ -123,12 +144,6 @@
             <p>Group project, cumulative from other gorup projects throughout the semester. We were tasked to create, from scratch (and handwritten karnaugh maps), a counter. This would be done exclusively through digital logic (AND, NOT, OR gates). Flip Flops (JK flip flop in this case) were also made by hand.
                 The user could toggle whether the counter would saturate or not, or whether it'd count up or down. </p>
 
-            <!-- <div class="image-container"> 
-                <img alt="Complicated Digital Logic Project" src="assets/counter/main.png" />
-                <img alt="Complicated Digital Logic Project" src="assets/counter/JKFF.png" />
-                <img alt="Complicated Digital Logic Project" src="assets/counter/3bit.png" />
-            </div> -->
-
             <img src="assets/counter/main.png" class="thumb" onclick="openGallery('csce212')">
             
         </div>
@@ -136,12 +151,16 @@
 
 
         <!-- old future section -->
-    <section id="future">
+    <!-- <section id="future">
         <h2>My Future</h2>
         <p> <a href="docs/constellation.html" target="_blank"> View the roadmap.  </a></p>
      
         
-    </section>
+    </section> -->
+
+     <!-- <section id="patents">
+        <h2>Patents</h2>
+     </section> -->
 
     <section id="about">
         <h2>About Me</h2>
@@ -164,12 +183,6 @@
     </div>
     </section>
 
-    <!-- Modal docs -->
-    <!-- <div id="imgModal" class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImg">
-    </div> -->
-
     <div id="imgModal" class="modal" onclick="closeModal(event)">
         <span class="close" onclick="closeModal(event)">&times;</span>
         <img id="modalImg" class="modal-content" />
@@ -178,7 +191,6 @@
             <button onclick="nextImage(event)">Next</button>
         </div>
     </div>
-
 
     <footer>
         <p>Haley Lind &copy; 2025</p>
