@@ -59,6 +59,9 @@ footer {
   text-align: center;
   padding: 1rem;
   background: #ddd;
+  /* background-color: #282830; */
+  /* background: #292f3a; */
+  background: #222;
 }
 
 /* .top-nav-button {
